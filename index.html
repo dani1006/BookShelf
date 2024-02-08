@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookShelf</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="js/script.js"></script>
+    <script src="js/dom.js"></script>
+    <script src="js/utility.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>BookShelf Website</h1>
+    </header>
+    <div class="search-container">
+      <input type="text" id="search" name="search" />
+      <button type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+    <div class="wrapper">
+      <div class="container" id="add-book">
+        <form class="form" action="#" id="form">
+          <div class="form-group form-title">
+            <label for="title">Judul</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-group form-title">
+            <label for="author">Penulis</label>
+            <input type="text" id="author" name="author" required />
+          </div>
+          <div class="form-group form-title">
+            <label for="year">Tahun</label>
+            <select id="year" name="year" required>
+              <option value="">Pilih Tahun</option>
+              <script>
+                for (let i = new Date().getFullYear(); i >= 1990; i--) {
+                  document.write('<option value="' + i + '">' + i + "</option>");
+                }
+              </script>
+            </select>
+            <!-- <input type="date" id="year" name="year" required /> -->
+          </div>
+
+          <div class="form-row form-title">
+            <label for="finish">Sudah Dibaca</label>
+            <input type="checkbox" id="finish" name="finish" />
+          </div>
+          <input type="submit" value="Tambahkan Buku" name="Submit" class="btn-submit" id="submit" />
+        </form>
+      </div>
+      <div class="container">
+        <h2 class="container-header">Belum dibaca</h2>
+        <div class="list-item" id="books"></div>
+      </div>
+      <div class="container">
+        <h2 class="container-header">Sudah dibaca</h2>
+        <div class="list-item" id="completed-books"></div>
+      </div>
+    </div>
+    <div id="toast" style="display: none">Buku Berhasil ditambahkan</div>
+
+    <footer>
+      <p>&copy; 2024 BookShelf Website. Dani Kurniawati present.</p>
+    </footer>
+  </body>
+</html>
