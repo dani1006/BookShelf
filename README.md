@@ -1,8 +1,8 @@
 <h1>BookShelf Website for Dicoding Submission</h1>
-<table>
+<table style="border: none; margin: auto;">
   <tr>
-    <td><img src="https://cdn.dribbble.com/userupload/12933202/file/original-918e80702dc9796edbe2cf7de522036f.png?resize=1200x1546" width="300"></td>
-    <td><img src="https://github.com/dani1006/BookShelf/blob/master/Screenshot%20(2170).png" width="300"></td>
+    <td  style="text-align:center;"><img src="https://cdn.dribbble.com/userupload/12933202/file/original-918e80702dc9796edbe2cf7de522036f.png?resize=1200x1546" width="300"></td>
+    <td  style="text-align:center;"><img src="https://github.com/dani1006/BookShelf/blob/master/Screenshot%20(2170).png" width="300"></td>
   </tr>
 </table>
  
